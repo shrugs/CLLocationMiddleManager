@@ -147,10 +147,10 @@ class CLLocationManagerSimulator: CLLocationManager, NSXMLParserDelegate {
 
   }
 
-  func parser(parser: NSXMLParser, foundCharacters string: String?) {
+  func parser(parser: NSXMLParser, foundCharacters string: String) {
     if let _ = latestWaypoint {
       if latestTimeStr != nil {
-        latestTimeStr! += string!
+        latestTimeStr! += string
       }
     }
   }
