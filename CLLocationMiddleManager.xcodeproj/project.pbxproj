@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9DEADE91BA8B9CC00B0C72A /* CLLocationMiddleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DEADE81BA8B9CC00B0C72A /* CLLocationMiddleManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9DEADEF1BA8B9CC00B0C72A /* CLLocationMiddleManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DEADE31BA8B9CC00B0C72A /* CLLocationMiddleManager.framework */; };
+		C9DEADF61BA8B9CC00B0C72A /* CLLocationMiddleManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DEADF51BA8B9CC00B0C72A /* CLLocationMiddleManagerTests.swift */; };
+		C9DEAE001BA8BA3800B0C72A /* CLLocationMiddleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DEADFF1BA8BA3800B0C72A /* CLLocationMiddleManager.swift */; };
+		C9DEAE021BA8BB9600B0C72A /* CLLocation+CLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DEAE011BA8BB9600B0C72A /* CLLocation+CLExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9DEADF01BA8B9CC00B0C72A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9DEADDA1BA8B9CC00B0C72A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9DEADE21BA8B9CC00B0C72A;
+			remoteInfo = CLLocationMiddleManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C9DEADE31BA8B9CC00B0C72A /* CLLocationMiddleManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CLLocationMiddleManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9DEADE71BA8B9CC00B0C72A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9DEADE81BA8B9CC00B0C72A /* CLLocationMiddleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLLocationMiddleManager.h; sourceTree = "<group>"; };
+		C9DEADEE1BA8B9CC00B0C72A /* CLLocationMiddleManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLLocationMiddleManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9DEADF41BA8B9CC00B0C72A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9DEADF51BA8B9CC00B0C72A /* CLLocationMiddleManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationMiddleManagerTests.swift; sourceTree = "<group>"; };
+		C9DEADFF1BA8BA3800B0C72A /* CLLocationMiddleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationMiddleManager.swift; sourceTree = "<group>"; };
+		C9DEAE011BA8BB9600B0C72A /* CLLocation+CLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+CLExtensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9DEADDF1BA8B9CC00B0C72A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DEADEB1BA8B9CC00B0C72A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DEADEF1BA8B9CC00B0C72A /* CLLocationMiddleManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9DEADD91BA8B9CC00B0C72A = {
+			isa = PBXGroup;
+			children = (
+				C9DEADE51BA8B9CC00B0C72A /* CLLocationMiddleManager */,
+				C9DEADF21BA8B9CC00B0C72A /* CLLocationMiddleManagerTests */,
+				C9DEADE41BA8B9CC00B0C72A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9DEADE41BA8B9CC00B0C72A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9DEADE31BA8B9CC00B0C72A /* CLLocationMiddleManager.framework */,
+				C9DEADEE1BA8B9CC00B0C72A /* CLLocationMiddleManagerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9DEADE51BA8B9CC00B0C72A /* CLLocationMiddleManager */ = {
+			isa = PBXGroup;
+			children = (
+				C9DEADE81BA8B9CC00B0C72A /* CLLocationMiddleManager.h */,
+				C9DEADE61BA8B9CC00B0C72A /* Supporting Files */,
+				C9DEADFF1BA8BA3800B0C72A /* CLLocationMiddleManager.swift */,
+				C9DEAE011BA8BB9600B0C72A /* CLLocation+CLExtensions.swift */,
+			);
+			path = CLLocationMiddleManager;
+			sourceTree = "<group>";
+		};
+		C9DEADE61BA8B9CC00B0C72A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9DEADE71BA8B9CC00B0C72A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9DEADF21BA8B9CC00B0C72A /* CLLocationMiddleManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9DEADF51BA8B9CC00B0C72A /* CLLocationMiddleManagerTests.swift */,
+				C9DEADF31BA8B9CC00B0C72A /* Supporting Files */,
+			);
+			path = CLLocationMiddleManagerTests;
+			sourceTree = "<group>";
+		};
+		C9DEADF31BA8B9CC00B0C72A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9DEADF41BA8B9CC00B0C72A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C9DEADE01BA8B9CC00B0C72A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DEADE91BA8B9CC00B0C72A /* CLLocationMiddleManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C9DEADE21BA8B9CC00B0C72A /* CLLocationMiddleManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9DEADF91BA8B9CC00B0C72A /* Build configuration list for PBXNativeTarget "CLLocationMiddleManager" */;
+			buildPhases = (
+				C9DEADDE1BA8B9CC00B0C72A /* Sources */,
+				C9DEADDF1BA8B9CC00B0C72A /* Frameworks */,
+				C9DEADE01BA8B9CC00B0C72A /* Headers */,
+				C9DEADE11BA8B9CC00B0C72A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CLLocationMiddleManager;
+			productName = CLLocationMiddleManager;
+			productReference = C9DEADE31BA8B9CC00B0C72A /* CLLocationMiddleManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C9DEADED1BA8B9CC00B0C72A /* CLLocationMiddleManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9DEADFC1BA8B9CC00B0C72A /* Build configuration list for PBXNativeTarget "CLLocationMiddleManagerTests" */;
+			buildPhases = (
+				C9DEADEA1BA8B9CC00B0C72A /* Sources */,
+				C9DEADEB1BA8B9CC00B0C72A /* Frameworks */,
+				C9DEADEC1BA8B9CC00B0C72A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9DEADF11BA8B9CC00B0C72A /* PBXTargetDependency */,
+			);
+			name = CLLocationMiddleManagerTests;
+			productName = CLLocationMiddleManagerTests;
+			productReference = C9DEADEE1BA8B9CC00B0C72A /* CLLocationMiddleManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9DEADDA1BA8B9CC00B0C72A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = mattc;
+				TargetAttributes = {
+					C9DEADE21BA8B9CC00B0C72A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					C9DEADED1BA8B9CC00B0C72A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = C9DEADDD1BA8B9CC00B0C72A /* Build configuration list for PBXProject "CLLocationMiddleManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9DEADD91BA8B9CC00B0C72A;
+			productRefGroup = C9DEADE41BA8B9CC00B0C72A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9DEADE21BA8B9CC00B0C72A /* CLLocationMiddleManager */,
+				C9DEADED1BA8B9CC00B0C72A /* CLLocationMiddleManagerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9DEADE11BA8B9CC00B0C72A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DEADEC1BA8B9CC00B0C72A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9DEADDE1BA8B9CC00B0C72A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DEAE021BA8BB9600B0C72A /* CLLocation+CLExtensions.swift in Sources */,
+				C9DEAE001BA8BA3800B0C72A /* CLLocationMiddleManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DEADEA1BA8B9CC00B0C72A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DEADF61BA8B9CC00B0C72A /* CLLocationMiddleManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9DEADF11BA8B9CC00B0C72A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9DEADE21BA8B9CC00B0C72A /* CLLocationMiddleManager */;
+			targetProxy = C9DEADF01BA8B9CC00B0C72A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C9DEADF71BA8B9CC00B0C72A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C9DEADF81BA8B9CC00B0C72A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C9DEADFA1BA8B9CC00B0C72A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CLLocationMiddleManager/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9DEADFB1BA8B9CC00B0C72A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CLLocationMiddleManager/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C9DEADFD1BA8B9CC00B0C72A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CLLocationMiddleManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C9DEADFE1BA8B9CC00B0C72A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CLLocationMiddleManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9DEADDD1BA8B9CC00B0C72A /* Build configuration list for PBXProject "CLLocationMiddleManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9DEADF71BA8B9CC00B0C72A /* Debug */,
+				C9DEADF81BA8B9CC00B0C72A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9DEADF91BA8B9CC00B0C72A /* Build configuration list for PBXNativeTarget "CLLocationMiddleManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9DEADFA1BA8B9CC00B0C72A /* Debug */,
+				C9DEADFB1BA8B9CC00B0C72A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9DEADFC1BA8B9CC00B0C72A /* Build configuration list for PBXNativeTarget "CLLocationMiddleManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9DEADFD1BA8B9CC00B0C72A /* Debug */,
+				C9DEADFE1BA8B9CC00B0C72A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9DEADDA1BA8B9CC00B0C72A /* Project object */;
+}

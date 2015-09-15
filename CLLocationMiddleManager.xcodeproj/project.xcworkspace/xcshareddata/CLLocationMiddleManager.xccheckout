@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>261E80C1-7881-4AA0-B09B-C4E1B763DB88</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CLLocationMiddleManager</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4578D766B5DBE6DF2EC214C7EC3D18EA6B77ECEE</key>
+		<string>github.com:Shrugs/CLLocationMiddleManager.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CLLocationMiddleManager.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4578D766B5DBE6DF2EC214C7EC3D18EA6B77ECEE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:Shrugs/CLLocationMiddleManager.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4578D766B5DBE6DF2EC214C7EC3D18EA6B77ECEE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4578D766B5DBE6DF2EC214C7EC3D18EA6B77ECEE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CLLocationMiddleManager</string>
+		</dict>
+	</array>
+</dict>
+</plist>
