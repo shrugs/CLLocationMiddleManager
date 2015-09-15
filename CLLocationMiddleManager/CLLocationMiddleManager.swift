@@ -131,12 +131,12 @@ class CLLocationManagerSimulator: CLLocationManager, NSXMLParserDelegate {
 
   // MARK: XML parsing logic for parsing GPX files
 
-  func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [NSObject : AnyObject]) {
+  func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
     switch elementName {
     case "wpt":
       latestWaypoint = Waypoint()
-      latestWaypoint!.lat = (attributeDict["lat"]! as! NSString).doubleValue
-      latestWaypoint!.lng = (attributeDict["lon"]! as! NSString).doubleValue
+      latestWaypoint!.lat = (attributeDict["lat"]! as NSString).doubleValue
+      latestWaypoint!.lng = (attributeDict["lon"]! as NSString).doubleValue
     case "time":
       if let _ = latestWaypoint {
         latestTimeStr = ""
@@ -170,10 +170,6 @@ class CLLocationManagerSimulator: CLLocationManager, NSXMLParserDelegate {
     default:
       return
     }
-  }
-
-  func parserDidEndDocument(parser: NSXMLParser) {
-    print(waypoints)
   }
 
   func convertDateString(str: String) -> NSDate {

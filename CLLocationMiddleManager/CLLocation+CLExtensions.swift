@@ -21,7 +21,7 @@ func RAD2DEG(radians: Double) -> Double {
 
 extension CLLocation {
 
-  func bearingInRadians(#towardsLocation : CLLocation) -> Double {
+  func bearingInRadians(towardsLocation towardsLocation : CLLocation) -> Double {
     let lat1 = DEG2RAD(self.coordinate.latitude)
     let lon1 = DEG2RAD(self.coordinate.longitude)
     let lat2 = DEG2RAD(towardsLocation.coordinate.latitude)
