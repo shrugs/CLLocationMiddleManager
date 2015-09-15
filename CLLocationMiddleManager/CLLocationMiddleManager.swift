@@ -15,7 +15,7 @@ class Waypoint : NSObject {
   var lng : Double = 0.0
 }
 
-class CLLocationMiddleManager: CLLocationManager, NSXMLParserDelegate {
+public class CLLocationMiddleManager: CLLocationManager, NSXMLParserDelegate {
 
   var xmlParser: NSXMLParser!
   var waypoints : [Waypoint] = []
