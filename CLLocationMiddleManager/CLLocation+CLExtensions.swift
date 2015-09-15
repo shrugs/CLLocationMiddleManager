@@ -37,7 +37,7 @@ extension CLLocation {
     return bearing
   }
 
-  func newLocation(atDistance distance: Double, alongBearingInRadians bearingInRadians: Double) -> CLLocation {
+  func newLocation(atDistance distance: Double, alongBearingInRadians bearingInRadians: Double, withSpeed speed: Double) -> CLLocation {
     // This code translated to Swift from https://github.com/johnmckerrell/LocationManagerSimulator
 
     // calculate an endpoint given a startpoint, bearing and distance
@@ -87,12 +87,21 @@ extension CLLocation {
     let L = lambda - (1 - C) * f * sinAlpha * (sigma + C * sinSigma * (cos2SigmaM + C * cosSigma * (-1 + 2 * cos2SigmaM * cos2SigmaM)))
 
     let lon2 = lon1 + L
-    return CLLocation(latitude: RAD2DEG(lat2), longitude: RAD2DEG(lon2))
+
+    return CLLocation(
+      coordinate: CLLocationCoordinate2D(latitude: RAD2DEG(lat2), longitude: RAD2DEG(lon2)),
+      altitude: 0.0,
+      horizontalAccuracy: 8.0,
+      verticalAccuracy: 8.0,
+      course: RAD2DEG(bearingInRadians),
+      speed: speed,
+      timestamp: NSDate()
+    )
   }
 
-  func newLocation(atDistance distance: Double, towardsLocation: CLLocation) -> CLLocation {
+  func newLocation(atDistance distance: Double, towardsLocation: CLLocation, withSpeed speed: Double) -> CLLocation {
     let bearing = self.bearingInRadians(towardsLocation: towardsLocation)
-    return self.newLocation(atDistance: distance, alongBearingInRadians: bearing)
+    return self.newLocation(atDistance: distance, alongBearingInRadians: bearing, withSpeed: speed)
   }
   
 }

@@ -88,7 +88,9 @@ public class CLLocationMiddleManager: CLLocationManager, NSXMLParserDelegate {
     // deltaT / totalT = deltaD / totalD
     let deltaD = (deltaT / totalT) * totalD
 
-    let newLocation = previousLocation?.newLocation(atDistance: deltaD, towardsLocation: nextLocation)
+    let speed = deltaD / deltaT
+
+    let newLocation = previousLocation?.newLocation(atDistance: deltaD, towardsLocation: nextLocation, withSpeed: speed)
 
     self.delegate?.locationManager!(self, didUpdateLocations: [newLocation!])
   }
@@ -102,30 +104,13 @@ public class CLLocationMiddleManager: CLLocationManager, NSXMLParserDelegate {
     let verticalAccuracy = 50.0
     let timestamp = NSDate()
 
-    var location : CLLocation!
-    if (false || previousLocation != nil) {
-      // @TODO(shrugs) - debug this
-      let course = RAD2DEG((previousLocation?.bearingInRadians(towardsLocation: previousLocation!))!)
-      location = CLLocation(
-        coordinate: coord,
-        altitude: 0.0,
-        horizontalAccuracy: horizontalAccuracy,
-        verticalAccuracy: verticalAccuracy,
-        course: course,
-        speed: 0.0,
-        timestamp: timestamp
-      )
-    } else {
-      location = CLLocation(
-        coordinate: coord,
-        altitude: altitude,
-        horizontalAccuracy: horizontalAccuracy,
-        verticalAccuracy: verticalAccuracy,
-        timestamp: timestamp
-      )
-    }
-
-    return location
+    return CLLocation(
+      coordinate: coord,
+      altitude: altitude,
+      horizontalAccuracy: horizontalAccuracy,
+      verticalAccuracy: verticalAccuracy,
+      timestamp: timestamp
+    )
 
   }
 
