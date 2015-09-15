@@ -33,7 +33,7 @@ public class CLLocationMiddleManager: CLLocationManager, NSXMLParserDelegate {
 
   // MARK: init
 
-  convenience init(file: String) {
+  public convenience init(file: String) {
     self.init()
 
     let path = NSBundle.mainBundle().pathForResource(file, ofType: "gpx")
