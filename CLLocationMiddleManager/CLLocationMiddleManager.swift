@@ -46,12 +46,12 @@ public class CLLocationMiddleManager: CLLocationManager, NSXMLParserDelegate {
 
   // MARK: overrides
 
-  override func startUpdatingLocation() {
+  override public func startUpdatingLocation() {
     timer?.invalidate()
     timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "calculateLocation", userInfo: nil, repeats: true)
   }
 
-  override func stopUpdatingLocation() {
+  override public func stopUpdatingLocation() {
     timer?.invalidate()
     timer = nil
   }
@@ -131,7 +131,7 @@ public class CLLocationMiddleManager: CLLocationManager, NSXMLParserDelegate {
 
   // MARK: XML parsing logic for parsing GPX files
 
-  func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
+  public func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
     switch elementName {
     case "wpt":
       latestWaypoint = Waypoint()
@@ -147,7 +147,7 @@ public class CLLocationMiddleManager: CLLocationManager, NSXMLParserDelegate {
 
   }
 
-  func parser(parser: NSXMLParser, foundCharacters string: String) {
+  public func parser(parser: NSXMLParser, foundCharacters string: String) {
     if let _ = latestWaypoint {
       if latestTimeStr != nil {
         latestTimeStr! += string
@@ -155,7 +155,7 @@ public class CLLocationMiddleManager: CLLocationManager, NSXMLParserDelegate {
     }
   }
 
-  func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+  public func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
     switch elementName {
     case "wpt":
       latestWaypoint = nil
